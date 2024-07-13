@@ -1,0 +1,30 @@
+{
+  "name": "slovenian-python",
+  "displayName": "Slovenian Python",
+  "description": "Syntax highlighting for Slovenian Python keywords",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "slovenian-python",
+        "aliases": ["Slovenian Python", "slovenian-python"],
+        "extensions": [".spy"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "slovenian-python",
+        "scopeName": "source.slovenian-python",
+        "path": "./syntaxes/slovenian-python.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+	"scopeName": "source.slovenian-python",
+	"name": "Slovenian Python",
+	"patterns": [
+	  {
+		"include": "#keywords"
+	  },
+	  {
+		"include": "#comments"
+	  },
+	  {
+		"include": "#strings"
+	  }
+	],
+	"repository": {
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.slovenian-python",
+			"match": "\\b(definiraj|za|v|dokler|vključi|iz|vrni|natisni|obseg|kot|vnos|če|drugače|drugačeče|in|ali|razred|preveri|zlomi|nadaljuj|izbriši|razen|Ne|Da|končno|globalno|je|Nič|nelokalen|ne|brez|dvigni|poskusi|z|dajaj)\\b"
+		  }
+		]
+	  },
+	  "comments": {
+		"patterns": [
+		  {
+			"name": "comment.line.number-sign.slovenian-python",
+			"begin": "#",
+			"beginCaptures": {
+			  "0": {
+				"name": "punctuation.definition.comment.slovenian-python"
+			  }
+			},
+			"end": "$"
+			
+		  }
+		]
+	  },
+	  "strings": {
+		"patterns": [
+		  {
+			"name": "string.quoted.single.slovenian-python",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.slovenian-python",
+				"match": "\\\\."
+			  }
+			]
+		  },
+		  {
+			"name": "string.quoted.double.slovenian-python",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.slovenian-python",
+				"match": "\\\\."
+			  }
+			]
+		  }
+		]
+	  }
+	}
+  }
